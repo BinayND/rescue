@@ -52,3 +52,27 @@ git checkout branch => for switching purpose
 git branch -r  => list branch
 
 ```
+
+Create dummy records in mysql using procedures for faster execution
+```bash
+DELIMITER //
+
+CREATE PROCEDURE InsertRecords()
+BEGIN
+  DECLARE counter INT DEFAULT 0;
+
+  -- Loop to insert records
+  WHILE counter < 100 DO
+    
+   INSERT INTO `tb_members` (`member_id`, `unique_code`, `first_name`, `email`, `phone_number`, `profile_img`, `dob`, `address`, `join_date`, `is_delete`, `is_active`, `createdAt`, `updatedAt`, `agent`, `ip`) VALUES (NULL, '0103-19', 'casd', 'test@gmail.com', '23546789', '300x3001.png', '2024-01-04', 'xsacds', '2024-01-11', '0', '1', '2024-01-03 21:04:28', '2024-01-03 21:04:28', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', '::1');
+    
+    SET counter = counter + 1;
+  END WHILE;
+END //
+
+DELIMITER ;
+
+-- Call the stored procedure to insert records
+CALL InsertRecords();
+
+```
