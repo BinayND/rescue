@@ -18,12 +18,17 @@ function getReportByCategory(that){
                   dataType: 'json',
                   data: {'sub_category':sub_category,'type':'category'},
                   //contentType: 'application/json',
+                cache: false,
+                contentType: false,
+                processData: false,
                    beforeSend: function() {
                     // $("#formLoader").show();
                 },
                   success: function (data) {
 
-                  
+//                   var res = JSON.parse(data);
+  //                  console.log(res);
+
                      var report_html = '';
                      year_html = "<option value=''>All Years</option>";
 
@@ -110,3 +115,35 @@ function getReportByCategory(that){
     });
 </script>
 ```
+
+# 3 Jquery
+
+```
+$('.pro_logo').attr('src', prj.logo_image);  // image update
+$('.dyn_reg_no').text(prj.rera_no); // p,span,div 
+$('.dyn_contact_email').attr('href', 'mailto:' + prj.contact_email);  // email tag
+$('.dync_payment_plans').html(' '); // empty html
+
+ # Fire Event  
+$(document).on('change', '#project_name', function(e) {
+            let sel_pid = $(this).val();
+});
+
+on page load
+ $(document).ready(function() {
+});
+
+```
+
+### shortcut to capture form data
+
+```
+
+var form = document.getElementById('onlineApplicationForm'); //  form id
+            var formData = new FormData(form); // return all form value
+
+setTimeout(() => {
+                    function_name(city);
+                }, 1000);
+```
+
