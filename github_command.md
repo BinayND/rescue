@@ -53,6 +53,8 @@ git branch -r  => list branch
 
 ```
 
+###Mysql Query Related
+
 Create dummy records in mysql using procedures for faster execution
 ```bash
 DELIMITER //
@@ -74,5 +76,12 @@ DELIMITER ;
 
 -- Call the stored procedure to insert records
 CALL InsertRecords();
+
+```
+
+## Year /month type
+
+```
+SELECT id,event_date,title FROM `tbl_event_details` where (YEAR(event_date)= '2022' ) and (MONTH(event_date) = "12");
 
 ```
