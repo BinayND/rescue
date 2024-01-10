@@ -1,10 +1,6 @@
 
 ## Ubuntu Server Command
 
-
-
-
-
 List of package install
 
 ```bash
@@ -175,7 +171,9 @@ done
 
 [How To Set Up Apache Virtual Hosts on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-20-04)
 
-How to Rewrite URLs with mod_rewrite for Apache on Ubuntu 20.04
+[Server level setting Configuration Reference](https://github.com/geekyshow1/GeekyShowsNotes)
+
+## How to Rewrite URLs with mod_rewrite for Apache on Ubuntu 20.04
 
 ```bash
 sudo a2enmod rewrite
