@@ -64,7 +64,7 @@ git stash apply or  git stash pop -- To retrieve your changes that are lost whil
 ```
 
 
-##Mysql Query Related
+## Mysql Query Related
 
 Create dummy records in mysql using procedures for faster execution
 ```bash
