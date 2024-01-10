@@ -53,7 +53,18 @@ git branch -r  => list branch
 
 ```
 
-###Mysql Query Related
+## Solving the git pull conflict error steps
+
+```
+https://www.simplilearn.com/tutorials/git-tutorial/merge-conflicts-in-git
+
+git stash  --  command is used to save changes that are not ready to be committed yet but need to be temporarily set aside
+git stash apply or  git stash pop -- To retrieve your changes that are lost while conflict solving.
+
+```
+
+
+##Mysql Query Related
 
 Create dummy records in mysql using procedures for faster execution
 ```bash
