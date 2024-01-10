@@ -133,6 +133,9 @@ on page load
  $(document).ready(function() {
 });
 
+Checked for checkbox
+ var is_agreed= $('#iAgreeTerms').prop('checked');
+
 ```
 
 ### shortcut to capture form data
