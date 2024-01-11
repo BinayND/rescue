@@ -23,6 +23,8 @@ upload_max_filesize = 20M
 
 ```
  post Content issue - increase the post max size
+ * Disable if you want to use external SEO plugin like YOAST - In betheme while setup only else it will rework
+
 ```
 
 ### CoreAndUpdate
