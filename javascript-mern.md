@@ -86,7 +86,76 @@ const category = new Category_coll({
 
 ### mongodb
 
+[Mongo db Reference ](https://www.mongodb.com/developer/products/mongodb/cheat-sheet/)
+[Refer 1](https://gist.github.com/subfuzion/9236165)
+
+Two package to install and require
+
+- [validators](https://www.npmjs.com/package/validator)
+- [types/validators](https://www.npmjs.com/package/@types/validator?activeTab=readme)
+
 ```
+1 - Defining a schema
+
+
+const mongoose = require('mongoose');
+
+const ProductSchema = mongoose.Schema({
+    sub_cat: {
+        type: String,
+        required: true,
+        unique: true,
+      },
+      createdAt: {
+        type: Date,
+        default: Date.now,
+      },
+role: {
+    type: string,
+    enum: ["admin", "user", "operator"],
+    default: "user",
+  },
+dob:{
+  type:date,
+  required:[true,'Enter valid calendar date'],
+},
+email:{
+  type:string,
+  unique:[true,'Email Already exists'],
+  required:[true,'Enter email ID'],
+  validate: validator.isEmail(),
+},
+{
+timestamps:true
+}
+
+
+});
+
+const Products_coll = mongoose.model("Products", ProductSchema);
+
+module.exports = {
+
+}
+
+2 - Custom Error Messages
+
+onst breakfastSchema = new Schema({
+  eggs: {
+    type: Number,
+    min: [6, 'Must be at least 6, got {VALUE}'],
+    max: 12
+  },
+  drink: {
+    type: String,
+    enum: {
+      values: ['Coffee', 'Tea'],
+      message: '{VALUE} is not supported'
+    }
+  }
+});
+const Breakfast = db.model('Breakfast', breakfastSchema);
+
 
 
 ```
