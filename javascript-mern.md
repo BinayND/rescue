@@ -101,6 +101,8 @@ Two package to install and require
 const mongoose = require('mongoose');
 
 const ProductSchema = mongoose.Schema({
+
+store_id: { type: mongoose.Types.ObjectId, ref: "stores" }, // stores is collection name
     sub_cat: {
         type: String,
         required: true,
