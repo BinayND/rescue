@@ -84,6 +84,9 @@ const category = new Category_coll({
 
 ```
 
+[Multiple Image Uplaod Code](https://github.com/Sameera-Perera/Express-Js-REST-API-Image-Uploade-Complete-Example)
+
+
 ### mongodb
 
 [Mongo db Reference ](https://www.mongodb.com/developer/products/mongodb/cheat-sheet/)
