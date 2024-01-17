@@ -176,7 +176,56 @@ onst breakfastSchema = new Schema({
 });
 const Breakfast = db.model('Breakfast', breakfastSchema);
 
+Search Query
+db.products.find({ name: { $regex: "", $options: "i" } })
+
+```
+
+## pagination example     
+
+```
+
+const paginate = async (req, res) => {
+  try {
+    var page = req.body.page;
+    var sort = req.body.sort;
+    var pageLimit = 2;
+
+    if (page <= 1) {
+      skip = 0;
+    } else {
+      skip = (page - 1) * pageLimit;
+    }
+
+    if (sort) {
+      var customersort;
+      if (sort == "name") {
+        customersort = {
+          name: 1,
+        };
+      } else if (sort == "id") {
+        customersort = {
+          _id: 1,
+        };
+      }
+
+      product_data = await Products_coll.find()
+        .sort(customersort)
+        .sort({ createdAt: -1 })
+        .skip(skip)
+        .limit(pageLimit);
+    } else {
+      product_data = await Products_coll.find()
+        .sort({ createdAt: -1 })
+        .skip(skip)
+        .limit(pageLimit);
+    }
+
+    res.status(200).send({ success: true, msg: product_data });
+  } catch (error) {
+    res.status(400).send({ success: false, msg: error.message });
+  }
+};
 
 
 ```
-    
