@@ -63,7 +63,15 @@ git stash apply or  git stash pop -- To retrieve your changes that are lost whil
 
 ```
 
+Always daily do git pull working on any project.
 
+Once you have done the code save on local than push on dir.
+
+```
+git stash  -  store on local machine for rollback purpose.
+git stash apply - store the previous all working code which was lost during conflict solved.
+
+``
 ## Mysql Query Related
 
 Create dummy records in mysql using procedures for faster execution
