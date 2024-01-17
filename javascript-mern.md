@@ -84,6 +84,21 @@ const category = new Category_coll({
 
 ```
 
+## Check if route is working or not
+
+```
+check in index.js or server.js entry file have you include the route file or not app use code eg
+const prd_routes = require("./routes/productRoute");
+app.use("/api/", prd_routes);
+
+
+Check debug the route
+prd_route.post("/product/add-product", (req, res) => {
+  console.log(req);
+});
+
+```
+
 [Multiple Image Uplaod Code](https://github.com/Sameera-Perera/Express-Js-REST-API-Image-Uploade-Complete-Example)
 
 
