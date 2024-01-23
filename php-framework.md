@@ -27,6 +27,12 @@ upload_max_filesize = 20M
  * Disable if you want to use external SEO plugin like YOAST - In betheme while setup only else it will rework
  - https://developers.google.com/search/docs/crawling-indexing/url-structure  -  SEO Related Google Document
  - [Create Wordpress Customo content types and admin panel MU Plugin ](https://wordpress.org/documentation/article/must-use-plugins/) 
+ -  Fetch Page Details Wp query
+
+  global $post;
+    $post_id = $post->ID;
+    $fetch_info = get_post_field('post_name', $post_id);
+
 
 ```
 
