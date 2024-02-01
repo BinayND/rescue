@@ -191,3 +191,18 @@ sudo nano /etc/apache2/sites-available/000-default.conf
     . . .
 </VirtualHost>
 ```
+
+## How to Setup Cronjob on vps server
+
+``` bash
+
+crontab -e
+nano editor select
+
+0 3 * * * php /var/www/html/project_name/index.php controller method >> /var/www/html/project_name/logfile.log 2>&1
+
+crontab -l -view
+
+[online generator](https://crontab.guru/#0_3_*_*_*)
+
+```
