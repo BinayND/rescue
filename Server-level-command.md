@@ -206,3 +206,15 @@ crontab -l -view
 [online generator](https://crontab.guru/#0_3_*_*_*)
 
 ```
+## Email outgoing error  eg stock mismatch Cpanel level setting for hosting
+
+```bash
+
+1. in WHM search TweakSetting in Server Configuration
+2. In Tweak Setting Page click on the Mail tab
+3. Search smtp in Mail tab
+4. search for Restrict outgoing SMTP to root, exim, and mailman (FKA SMTP Tweak)
+5. change the default on to off
+6. Save the new setting
+
+```
