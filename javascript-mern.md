@@ -25,6 +25,14 @@
 
 ```
 
+** DateTime Conversion To System Machine
+    const mongoDate = new Date("2024-02-06T11:10:31.323Z");
+    const localDate = mongoDate.toLocaleString();
+
+    console.log(localDate);
+    return false;
+
+
 ```
 
 
