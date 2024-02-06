@@ -31,14 +31,23 @@ $ git push // push to remote repository
 $ git push -u origin gcp_dev // pull the latest from Remote repository
 $ git clone  //clone repository into new repository.
 ```
-Mapping Remote repository
+Mapping Remote repository For new project on machine
 
 ```bash
 git init  
-git remote add origin your_repo.git  
+git remote add origin your_repo.git - ssh path  
 git remote -v  
 git status
 git remote set-url origin git@bitbucket.org:<USER>/<REPO>.git
+
+If there pathsec error or branch not exist , follow below command
+git branch
+git fetch origin // first pull on local
+git fetch origin branch
+git checkout branch 
+
+
+
 ```
 To remove file
 
