@@ -124,6 +124,8 @@ router.use(bodyParser.urlencoded({ extended: true }));
 [Mongo db Reference ](https://www.mongodb.com/developer/products/mongodb/cheat-sheet/)
 [Refer 1](https://gist.github.com/subfuzion/9236165)
 
+[Comman Method ](https://www.mongodb.com/docs/v5.2/reference/method/)
+
 Two package to install and require
 
 - [validators](https://www.npmjs.com/package/validator)
