@@ -84,6 +84,8 @@ const category = new Category_coll({
 
 ```
 
+
+
 ## Check if route is working or not
 
 ```
@@ -100,6 +102,13 @@ prd_route.post("/product/add-product", (req, res) => {
 ```
 
 [Multiple Image Uplaod Code](https://github.com/Sameera-Perera/Express-Js-REST-API-Image-Uploade-Complete-Example)
+
+## Npm Package Body parser is useful to get browser body data
+
+const bodyParser = require("body-parser");
+router.use(express.json());
+router.use(bodyParser.json());
+router.use(bodyParser.urlencoded({ extended: true }));
 
 
 ### mongodb
