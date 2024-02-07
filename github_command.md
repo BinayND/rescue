@@ -13,6 +13,8 @@ Config fot token creation and ssh machine
 
 [Reference 2](https://help.github.com/en/articles/error-permission-denied-publickey)
 
+[inital Project Setup With new account] (https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+
 
 
 ```bash
