@@ -45,6 +45,7 @@ upload_max_filesize = 20M
 ### codeIgniter
 
 ```
+<?= date('Y-m-d h:m:s A', strtotime($val['inserted_date'])) ?>
 
 ```
 
