@@ -22,6 +22,7 @@ zip -r filname.zip /foldername
 unzip filname.zip -d /var/www/html/foldername
 cp /source path /destination path  // copy 
 rm foldernamecomplete eg .zip // to delete the folder
+mv /path/to/source/directory /path/to/destination/directory
 
 ```
 
