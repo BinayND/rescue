@@ -23,6 +23,7 @@
 
 ## nodejs
 
+[Code Seperation](https://www.infoq.com/articles/separation-concerns-nodejs/)
 ```
 
 ** DateTime Conversion To System Machine
@@ -33,7 +34,9 @@
     return false;
 
 
+
 ```
+
 
 
 ### express
