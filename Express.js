@@ -28,7 +28,9 @@ check('name').optional({ checkFalsy: true }).trim().isLength({ min: 3, max: 30 }
 
 ### Updates
 
+  -  while upgrading aws s3 from v2 to version 3 error of location path how is solved using change function[Refer](https://stackoverflow.com/questions/77184519/unable-to-get-the-public-link-to-s3-bucket-object-after-uploading-from-node-js)
 ```
+const baseurl =  ${req.protocol}://${req.get('host)}/public/uploads
 
 
 ```
