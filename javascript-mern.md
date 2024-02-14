@@ -137,6 +137,7 @@ router.use(bodyParser.urlencoded({ extended: true }));
 
 [Mongo db Reference ](https://www.mongodb.com/developer/products/mongodb/cheat-sheet/)
 [Refer 1](https://gist.github.com/subfuzion/9236165)
+[Mongo db Compass shell command line](https://www.mongodb.com/docs/mongodb-shell/crud/read/#std-label-mongosh-read)
 
 [Comman Method ](https://www.mongodb.com/docs/v5.2/reference/method/)
 
