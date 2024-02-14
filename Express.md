@@ -19,6 +19,10 @@ check('name').optional({ checkFalsy: true }).trim().isLength({ min: 3, max: 30 }
 ### Errorhandling
 
 - File Upload using postman error multer solution handle in diskstorge function [Refer](https://stackoverflow.com/questions/48726473/postman-raw-data-works-but-form-data-not-works-on-post-request-in-node)
+
+- Mongodb Playground[Refer](https://mongoplayground.net/)
+
+
   
 ```
 
@@ -36,6 +40,8 @@ const baseurl =  ${req.protocol}://${req.get('host)}/public/uploads
 ```
 
 ### ShortCut
+
+- Node Code Style [Refer](https://github.com/felixge/node-style-guide?tab=readme-ov-file#2-spaces-for-indentation) 
 
 ```
 
