@@ -59,6 +59,14 @@ To remove file
 git rm --cached <filename>
 ```
 
+- While fetching repo new member changes first remove you code or don't start it - solve error Your local changes to the following files would be overwritten by merge: Please commit your changes or stash them before you merge pull request on local machine
+
+  ```
+git checkout -- . to discard all changes.
+Stash your changes: If you want to temporarily save your changes and apply them later, you can use git stash to stash them. After resolving the merge, you can apply your changes with git stash apply.
+
+  ```
+
 Branch level command 
 ```bash
 git checkout branch => for switching purpose
