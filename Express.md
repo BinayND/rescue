@@ -47,3 +47,24 @@ const baseurl =  ${req.protocol}://${req.get('host)}/public/uploads
 
 
 ```
+
+[Code Seperation](https://www.infoq.com/articles/separation-concerns-nodejs/)
+
+if face error node in terminal node- v not showing 'node' is not recognized as an internal or external command,
+operable program or batch file.
+[How to switch cmd to powershell in vscode ](https://stackoverflow.com/questions/42729130/visual-studio-code-how-to-switch-from-powershell-exe-to-cmd-exe)
+ - Kill terminal > Restart vscode
+
+Installing Node Version LTS on machine first time or updating
+error 
+The term node is not recognized as the name of a cmdlet, function, script file, or operable program. [Refer]( https://www.codewithharry.com/blogpost/solving-node-not-recognized-error-windows/)
+
+  - DateTime Conversion To System Machine
+```
+    const mongoDate = new Date("2024-02-06T11:10:31.323Z");
+    const localDate = mongoDate.toLocaleString();
+    console.log(localDate);
+    return false;
+```
+
+
