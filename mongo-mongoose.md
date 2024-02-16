@@ -1,1 +1,1 @@
-
+-  Select specific field => db.trips.findOne({tripNo:2},{tripNo: 1, _id: 0 }) // skip _id field
