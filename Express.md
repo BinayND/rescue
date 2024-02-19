@@ -42,6 +42,8 @@ const baseurl =  ${req.protocol}://${req.get('host)}/public/uploads
 ### ShortCut
 
 - Node Code Style [Refer](https://github.com/felixge/node-style-guide?tab=readme-ov-file#2-spaces-for-indentation) 
+- Create Mock Dummy Data Latest [Version -8](https://fakerjs.dev/api/faker.html)
+- 
 
 ```
 
