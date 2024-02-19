@@ -9,3 +9,4 @@
 - for single document only => db.coll.findOne() // returns a single document
 - db.coll.find()    // returns a cursor - show 20 results - "it" to display more
 - db.coll.find().pretty()
+- Delete one records db.coll.deleteMany({ id: 7 })
