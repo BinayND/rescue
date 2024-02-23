@@ -53,7 +53,7 @@ RewriteCond $1 !^(index\.php|images|Downloads|css|js|asset|fonts|robots\.txt)
 
 #RewriteCond %{REQUEST_FILENAME} !-f
 #RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /singersewingstudio/index.php/$1 [L,QSA] 
+RewriteRule ^(.*)$ /projectname/index.php/$1 [L,QSA] 
 
 
 ```
