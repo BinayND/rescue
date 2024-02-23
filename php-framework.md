@@ -44,6 +44,20 @@ upload_max_filesize = 20M
 
 ### codeIgniter
 
+- htaccess file for local setup of live project keep in root project folder outside
+```
+RewriteEngine on
+
+#RewriteCond $1 !^(index\.php|resources|robots\.txt)
+RewriteCond $1 !^(index\.php|images|Downloads|css|js|asset|fonts|robots\.txt)
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /singersewingstudio/index.php/$1 [L,QSA] 
+
+
+```
+
 ```
 <?= date('Y-m-d h:m:s A', strtotime($val['inserted_date'])) ?>
 
