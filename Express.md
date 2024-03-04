@@ -80,7 +80,7 @@ The term node is not recognized as the name of a cmdlet, function, script file, 
 
 - node-cache shortcut
 
-  ```
+```
 const NodeCache = require("node-cache");
 const myCache = new NodeCache({});
 
@@ -97,7 +97,6 @@ if (myCache.has("keyname")) {
 
 delete -     myCache.del("recent_trips");
 
-
-  ```
+```
 
 
