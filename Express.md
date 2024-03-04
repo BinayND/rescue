@@ -78,4 +78,26 @@ The term node is not recognized as the name of a cmdlet, function, script file, 
     return false;
 ```
 
+- node-cache shortcut
+
+  ```
+const NodeCache = require("node-cache");
+const myCache = new NodeCache({});
+
+check if has
+if (myCache.has("keyname")) {
+      trips = JSON.parse(myCache.get("keyname"));
+    }else{
+
+  fetch query
+
+        myCache.set("keyname", JSON.stringify(var));
+
+    }
+
+delete -     myCache.del("recent_trips");
+
+
+  ```
+
 
