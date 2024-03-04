@@ -70,3 +70,13 @@ RewriteRule ^(.*)$ /projectname/index.php/$1 [L,QSA]
 
 ```
     
+#### Cpanel New Version 10 onwards php mailer issue of port solved ? Steps at cpanel level
+http://150.242.12.174/
+
+
+1. in WHM search TweakSetting in Server Configuration
+2. In Tweak Setting Page click on the Mail tab
+3. Search smtp in Mail tab
+4. search for Restrict outgoing SMTP to root, exim, and mailman (FKA SMTP Tweak)
+5. change the default on to off
+6. Save the new setting
