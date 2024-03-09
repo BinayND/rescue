@@ -17,4 +17,4 @@
 
 ## Reference 
 
-[Complex Function such as aggregation] (https://www.youtube.com/watch?v=4EjKroJCpFA&list=PLA3GkZPtsafZydhN4nP0h7hw7PQuLsBv1)  
+[Complex Function such as aggregation](https://www.youtube.com/watch?v=4EjKroJCpFA&list=PLA3GkZPtsafZydhN4nP0h7hw7PQuLsBv1)  
