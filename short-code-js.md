@@ -150,3 +150,5 @@ setTimeout(() => {
                 }, 1000);
 ```
 
+### nodejs version switch steps [https://codedamn.com/news/nodejs/nvm-installation-setup-guide]
+
