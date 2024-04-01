@@ -20,6 +20,15 @@ upload_max_filesize = 20M
 
 ```
 
+### Enable Cpanel Cache Module
+
+```
+Optimize Website
+text/html text/plain text/xml text/css application/javascript image/png image/jpeg font/woff2
+
+
+```
+
 ### wordpress
 
 ```
