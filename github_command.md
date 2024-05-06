@@ -92,7 +92,23 @@ Once you have done the code save on local than push on dir.
 git stash  -  store on local machine for rollback purpose.
 git stash apply - store the previous all working code which was lost during conflict solved.
 
-``
+```
+
+## How to resolve conflict and merge issue 
+
+```
+1) Abort the Merge (if necessary): If you've started the merge process but haven't resolved any conflicts yet, you can abort the merge and start over.
+git merge --abort
+
+2)git mergetool ->Once you select one, it will launch the tool and guide you through resolving conflicts.
+3)git status
+4)git diff <conflicted-file>
+5) git add <conflicted-file>
+6)git merge --continue
+
+```
+
+
 ## Mysql Query Related
 
 Create dummy records in mysql using procedures for faster execution
