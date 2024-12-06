@@ -33,6 +33,14 @@ du -h --max-depth=1 > diskusage.txt // generate the file on root
 
 ```
 
+ubuntu server details space ram storgae
+
+```bash
+echo "Disk Space:" && df -h && echo "Memory Usage:" && free -h
+for CPU lscpu
+ 
+```
+
 PHP project server level setting
 
 ```bash
