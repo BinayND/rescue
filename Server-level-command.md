@@ -104,6 +104,13 @@ sudo systemctl restart apache2
 sudo service mysqld start
 sudo service mysqld stop
 
+
+ubuntu server ( run once per months)
+service mysql status
+service mysql start
+service mysql stop
+sudo service mysql restart
+
 ```
 
 Nano Editor command
